@@ -1,0 +1,14 @@
+{
+  "name": "css-regression-testing-presentation",
+  "version": "0.0.1",
+  "author": "Alexander Suevalov",
+  "description": "Presentation about CSS Regression Testing. DataArt 2015.",
+  "dependencies": {},
+  "devDependencies": {
+    "bespoke": "^1.0.0",
+    "gulp": "^3.8.11"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

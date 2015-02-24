@@ -1,0 +1,11 @@
+{
+  "name": "css-regression-phantom-css-example",
+  "author": "Alexander Suevalov",
+  "dependencies": {},
+  "devDependencies": {
+    "resemblejs": "~1.2.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

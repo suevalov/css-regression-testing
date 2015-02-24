@@ -1,0 +1,9 @@
+{
+  "name": "css-regression-testing-presentation",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "prism": "gh-pages",
+    "normalize.css": "~3.0.2"
+  }
+}
