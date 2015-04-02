@@ -1,0 +1,5 @@
+<testsuite name="[/Users/suevalov/Development/projects/dataart/js-community/css-regression-tools/tools/phantom-flow/test-results/visuals/flows/coffeemachine.test.js/Get a coffee/Wants Latte.phantomcss] There is no milk" tests="1" failures="1">
+  <testcase classname="Request Latte" name="PhantomCSS /Users/suevalov/Development/projects/dataart/js-community/css-regression-tools/tools/phantom-flow/test-results/visuals/flows/coffeemachine.test.js/Get a coffee/Wants Latte/There is no milk/Request Latte.png">
+    <failure type="fail">explicit call to fail()</failure>
+  </testcase>
+</testsuite>

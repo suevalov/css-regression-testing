@@ -1,0 +1,5 @@
+<testsuite name="[flows/responsive.test.js] My first responsive webpage" tests="3" failures="0">
+  <testcase classname="View in 1500px/Look at the page" name="Responsive page has loaded"></testcase>
+  <testcase classname="View in 990px/Look at the page" name="Responsive page has loaded"></testcase>
+  <testcase classname="View in 440px/Look at the page" name="Responsive page has loaded"></testcase>
+</testsuite>

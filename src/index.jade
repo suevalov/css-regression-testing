@@ -1,0 +1,201 @@
+doctype html
+html(prefix="og: http://ogp.me/ns#")
+  head
+    meta(property="og:title" content="CSS Regression Testing. Alexander Suevalov.")
+    meta(property="og:type" content="article")
+    meta(property="og:locale" content="en_GB")
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title CSS Regression Testing. Alexander Suevalov.
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Open+Sans:300,400,700', rel='stylesheet' type='text/css')
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+    <!--[if lt IE 9]><p class="chromeframe">You are using an outdated browser.<a href="http://browsehappy.com/">Upgrade your browser today</a>or<a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>to better experience this site.</p><![endif]-->
+    article
+
+      section(data-bespoke-backdrop="intro")
+        .content
+          .byline
+          h2 CSS Regression Testing
+          .byline
+          .me
+          .me-contacts
+            a(href="http://suevalov.com" target="__blank") http://suevalov.com
+            a(href="mailto:asuevalov@dataart.com") asuevalov@dataart.com
+
+      section.green.slide2(data-bespoke-backdrop="green")
+        .content
+          h2 Code Quality Assurance
+          ul(style="text-align: center; font-size: 30px; margin-top: 50px;")
+            li JS Code Style: jscs
+            li JS Static Syntax Analysis: jshint
+            li JS Regressions: functional testing
+            li CSS Regressions: ?
+
+      section.slide3(data-bespoke-backdrop="slide3")
+        .content
+          .byline
+          h2 What is Regression Testing?
+          .byline
+          img(src="images/regression.png" style="margin-top: 20px;")
+
+      section.slide4(data-bespoke-backdrop="slide4")
+        .content
+          .byline
+          h2 Why do we need to automate?
+          .byline
+
+      section(data-bespoke-backdrop="difference")
+
+      section.green.slide5(data-bespoke-backdrop="green")
+        .content
+          h2(style="font-size: 45px;") Easy to break, hard to track
+          img(src="images/bugs.png" style="margin-top: 20px;")
+
+      section.slide6
+        .content.bullet-step
+          ul
+            li.bullet
+              img(src="images/imagine1.jpg" style="margin-top: 20px;")
+            li.bullet
+              img(src="images/imagine2.jpg" style="margin-top: 20px;")
+            li.bullet
+              img(src="images/imagine3.jpg" style="margin-top: 20px;")
+            li.bullet
+              img(src="images/imagine4.jpg" style="margin-top: 20px;")
+
+      section.slide7(data-bespoke-backdrop="screaming")
+        .content
+          h2 Manual testing? No way!
+
+      section.slide8(data-bespoke-backdrop="machine-suffer")
+        .content
+          h2 Machines should suffer!
+
+      section.green.slide9(data-bespoke-backdrop="green")
+        .content
+
+          h2 What we want
+          ul(style="text-align: center; margin-bottom: 20px; font-size: 32px;")
+            li Testing in different browsers
+            li Testing in different viewports
+            li Comparing page fragments
+            li Manipulate with page before taking screenshot
+
+      section.slide10
+        .content
+          img(src="images/demo-time.jpg")
+
+      section.slide11.tool
+        .content
+          h2 DPXDT
+          a(href="https://github.com/bslatkin/dpxdt" target="__blank") https://github.com/bslatkin/dpxdt
+          ul(style="text-align: center; margin-top: 20px;")
+            li.bullet No need to write tests
+            li.bullet Need to provide reference URL
+            li.bullet Only full page screenshots
+
+      section.slide12.tool
+        .content
+          h2 Huxley
+          a(href="https://github.com/facebookarchive/huxley" target="__blank") https://github.com/facebookarchive/huxley
+          ul(style="text-align: center; margin-top: 20px;")
+            li.bullet No need to write tests
+            li.bullet Testing in different states
+            li.bullet Only full page screenshots
+            li.bullet Only one browser
+
+      section.slide13.tool
+        .content
+          h2 PhantomCSS
+          a(href="https://github.com/Huddle/PhantomCSS" target="__blank") https://github.com/Huddle/PhantomCSS
+          ul(style="text-align: center; margin-top: 20px;")
+            li.bullet Fragments
+            li.bullet Testing in different states
+            li.bullet Only in PhantomJS
+            li.bullet Manipulations with page using CasperJS
+
+      section.slide14.tool
+        .content
+          h2 PhantomFlow - Decision trees
+          a(href="https://github.com/Huddle/PhantomFlow" target="__blank") https://github.com/Huddle/PhantomFlow
+          ul(style="text-align: center; margin-top: 20px;")
+            li.bullet Enables a more expressive way of describing user interaction paths within tests
+            li.bullet Uses PhantomCSS
+            li.bullet Only in PhantomJS
+            li.bullet Supports TDD and BDD for web applications and responsive web sites
+            li.bullet Supports misual regression workflows, quick inspection & rebasing via UI.
+
+      section.slide15.tool
+        .content
+          h2 Backstop.js
+          a(href="https://github.com/garris/BackstopJS" target="__blank") https://github.com/garris/BackstopJS
+          ul(style="text-align: center; margin-top: 20px;")
+            li.bullet Great for testing simple application
+            li.bullet Declarative description
+            li.bullet Only in PhantomJS
+
+      section.slide16.tool
+        .content
+          h2 WebDriverCSS
+          a(href="https://github.com/webdriverio/webdrivercss" target="__blank") https://github.com/webdriverio/webdrivercss
+          ul(style="text-align: center; margin-top: 20px;")
+            li.bullet Uses Selenium Grid
+            li.bullet Testing for different browsers in different states
+            li.bullet Intergration with SauceLabs, BrowserStack
+            li.bullet Fragments, excludes
+
+      section.slide17.tool
+        .content
+          h2 Gemini
+          a(href="https://github.com/bem/gemini" target="__blank") https://github.com/bem/gemini
+          ul(style="text-align: center; margin-top: 20px;")
+            li.bullet Compatibility with different browsers
+            li.bullet Intergration with SauceLabs, BrowserStack
+            li.bullet Fragments
+            li.bullet CSS test coverage statistics
+
+      section(data-bespoke-backdrop="love-all")
+
+      section.green(data-bespoke-backdrop="green")
+        .content
+          h2 Some Advices
+          ul(style="margin-top: 20px; font-size: 32px; text-align: center;")
+            li Use static data
+            li CSS Regression Testing is not a replacement of functional JS testing
+                
+      section.thanks(data-bespoke-backdrop="ironman")
+        .content
+          h2 Thanks
+          a(href="http://suevalov.com/" target="__blank") Alexander Suevalov
+          a(href="mailto:asuevalov@dataart.com") asuevalov@dataart.com
+          a.github(href="https://github.com/suevalov" target="__blank") http://github.com/suevalov
+          a.twitter(href="https://twitter.com/Suevalov" target="__blank") http://twitter.com/Suevalov
+          
+    script(src='build/build.js')
+    script.
+      (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+        try {
+          w.yaCounter27193172 = new Ya.Metrika({
+            id:27193172,
+      trackHash:true
+      });
+      } catch(e) { }
+      });
+      var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    noscript
+      div
+        img(src="//mc.yandex.ru/watch/27193172" style="position:absolute; left:-9999px;" alt="")
+      
+      
+

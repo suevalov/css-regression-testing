@@ -1,0 +1,332 @@
+@import 'normalize.css/normalize.css'
+
+$background = #111;
+$white = #f2f2f2
+$turquoise = #00c284
+
+$sans-serif = 'Source Sans Pro', 'Open Sans', sans-serif;
+$font-color = darken(white, 5%)
+$darker-font = darken($font-color, 30%)
+$darker-again = darken($font-color, 60%)
+
+clearfix()
+  zoom 1
+  &:after
+  &:before
+    content ""
+    display table
+  &:after
+    clear both
+
+*
+  margin: 0
+  padding: 0
+  -webkit-font-smoothing: antialiased
+  font-smoothing: antialiased
+
+body
+  font-family: $sans-serif
+
+html
+  text-size-adjust: auto
+
+html .content {
+  clearfix();
+  display: block
+  padding: 1em
+  word-break: break-word
+  opacity: 0;
+  transition: opacity .5s ease
+  transition-delay: .5s
+}
+
+html .bespoke-active .content {
+  opacity: 1;
+}
+
+.bespoke-parent
+  font-size: 1.5em
+  background: $background
+  color: $white
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  overflow: hidden
+  text-align: center
+  transition: background 1s ease
+  background-position: 50% 50%
+
+.bespoke-scale-parent
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  pointer-events: none
+  z-index: 1
+  .bespoke-active
+    pointer-events: auto
+
+.bespoke-slide
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  box-pack: center
+  box-align: center
+  transition: opacity .5s ease
+  justify-content: center
+  align-items: center
+  z-index: 2
+
+.bespoke-slide.bespoke-active
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-box
+  display: box
+
+.bespoke-slide .content
+.bespoke-active
+  transition-delay: .5s
+
+.bespoke-inactive
+  opacity: 0
+  pointer-events: none
+
+.bespoke-backdrop
+  transition: opacity 1s ease
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  opacity: 0
+  &-active
+    opacity: 1
+
+.bespoke-backdrop
+  opacity: 0
+  transition: opacity 1s ease, transform 6s ease
+  background-size: cover
+  background-position: 50% 50%
+  transform: translateZ(0)
+  &-active,
+  &-before
+    transform: translateZ(0)
+  &-before
+    transition-delay: .2s
+  &-active
+    opacity: 0.5
+
+.bespoke-progress-parent
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  height: .3vw
+  z-index: 1
+
+.bespoke-progress-bar
+  background: $turquoise
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+  transition: width 1s ease
+
+.bespoke-bullet
+  transition: opacity .3s ease
+
+.bespoke-bullet-inactive
+  opacity: 0
+
+strong
+  font-weight: 400
+
+hr
+  width: 50%
+  margin: 1rem auto
+  height: 1px
+  border: 0
+  background: $white
+
+h1, h2, h3, p, li
+  padding-left: 20px
+  padding-right: 20px
+
+h1, h2, h3, h4, p, li, pre
+  font-weight: 200
+
+h1
+  font-weight: 400
+  line-height: 1.4em
+  padding: 1em
+  margin: 0.17em 0
+  position: relative
+  min-width: 8em
+
+h2
+  font-weight: 400
+  line-height: 1.1em
+  padding: 0
+  padding-left: @letter-spacing
+  margin: 0.17em 0
+  position: relative
+
+h3
+  font-style: italic
+  font-size: 1.2em
+  line-height: 1.6em
+  margin: .5em 0
+
+h4
+  text-transform: uppercase
+  font-size: .8em
+  line-height: 1.8em
+  letter-spacing: .3em
+  margin: 1em 0
+
+ul, ol
+  padding: 0
+  margin: 0
+  text-align: left
+
+li
+  list-style: none
+  margin: .2em
+  font-style: normal
+  transform: translateX(-6px)
+  &:before
+    content: $emdash
+    margin-right: 4px
+
+pre
+  background: none !important
+
+code
+  font-family: $monospace !important
+  font-style: normal
+  font-weight: 200 !important
+  text-align: left
+
+a
+  padding-left: .3em
+  color: currentColor
+  text-decoration: none
+  transition: color .3s ease
+  &:hover
+    color: $turquoise
+
+/**
+  Backgrounds
+*/
+
+.bespoke-backdrop.intro
+  background-image: url('../images/intro.jpg')
+  filter: blur(1px) grayscale(0) brightness(1)
+
+.bespoke-backdrop.slide4
+  background-image: url('../images/automate.gif')
+
+.bespoke-backdrop.ironman
+  background-image: url('../images/ironman-thanks.gif')
+
+.bespoke-backdrop.screaming
+  background-image: url('../images/screaming.jpg')
+
+.bespoke-backdrop.difference
+  background-image: url('../images/difference.jpg')
+
+.bespoke-backdrop.machine-suffer
+  background-image: url('../images/machine-suffer.gif')
+
+.bespoke-backdrop.love-all
+  background-image: url('../images/i-loved-it-all.jpg')
+
+.bespoke-backdrop.green
+  background-color: #00f3a5
+  &.bespoke-backdrop-active
+    opacity: 1
+
+section.green
+  color: rgba(0,0,0,.6)
+  a
+    color: rgba(0,0,0,.6)
+    &:hover
+      color: rgba(0,0,0,.7)
+
+/**
+  Main Styles
+**/
+
+section
+  .byline
+    font-size: 1em
+    &:before
+      content: ""
+      display: block
+      box-flex: 1
+      height: 0
+      padding-top: 1px
+      border-bottom: 1px dotted darken($white, 30%)
+
+section
+  h1
+    font-size: 65px
+    font-weight: 300
+    margin: 0
+    padding: 10px
+    text-transform: uppercase
+  h2
+    font-size: 55px
+    font-weight: 300
+    margin: 0
+    padding: 10px
+
+  .me
+    margin: 20px auto
+    margin-top: 35px
+    width: 80px
+    height: 80px
+    border-radius: 60px
+    background-size: cover
+    background-image: url('../images/me.png')
+
+  .me-contacts
+    margin: 20 auto
+    a
+      color: $darker-font
+      display: inline-block
+      margin 0 20px
+      text-decoration: none
+      font-size: 16px
+      border: none
+    a:hover
+      color: lighten($darker-font, 20%)
+
+.bullet-step
+  .bespoke-bullet-active,
+  .bespoke-bullet-inactive
+    display: none;
+  .bespoke-bullet-current
+    display: block;
+
+section.thanks
+  .content
+    position: absolute
+    left: 0
+    top: 35%
+    padding-left: 100px
+  text-align left
+  h2
+    font-size: 70px
+  a
+    font-family $sans-serif
+    font-weight 300
+    font-size: 18px
+    margin-left: 10px
+    display: block
+    line-height: 26px
