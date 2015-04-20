@@ -10,12 +10,14 @@ var pkg = require('./package.json'),
   jade = require('gulp-jade'),
   stylus = require('gulp-stylus'),
   autoprefixer = require('gulp-autoprefixer'),
-  csso = require('gulp-csso'),
   through = require('through'),
   opn = require('opn'),
   ghpages = require('gh-pages'),
   path = require('path'),
-  isDist = process.argv.indexOf('serve') === -1;
+  isDist = process.argv.indexOf('serve') === -1,
+  http    = require('http');
+  express = require('express');
+  morgan  = require('morgan');
 
 gulp.task('js', ['clean:js'], function() {
   return gulp.src('src/scripts/main.js')
@@ -105,6 +107,35 @@ gulp.task('deploy', ['build'], function(done) {
   ghpages.publish(path.join(__dirname, 'dist'), { logger: gutil.log }, done);
 });
 
+gulp.task('server', function() {
+
+  var server = express();
+
+  // log all requests to the console
+  server.use(morgan('dev'));
+  server.use(express.static('website'));
+
+  server.all('/*', function(req, res) {
+    res.sendFile('index.html', { root: 'website' });
+  });
+
+  // Start webserver if not already running
+  var s = http.createServer(server);
+  s.on('error', function(err){
+    if(err.code === 'EADDRINUSE'){
+      gutil.log('Development server is already started at port ' + config.serverport);
+    }
+    else {
+      throw err;
+    }
+  });
+
+  s.listen(3000);
+
+});
+
 gulp.task('build', ['js', 'html', 'css', 'images']);
 gulp.task('serve', ['connect', 'watch']);
 gulp.task('default', ['build']);
+
+

@@ -45,6 +45,7 @@ html .bespoke-active .content {
 }
 
 .bespoke-parent
+  min-width: 1000px;
   font-size: 1.5em
   background: $background
   color: $white
@@ -70,6 +71,7 @@ html .bespoke-active .content {
     pointer-events: auto
 
 .bespoke-slide
+  min-width: 1000px;
   position: absolute
   top: 0
   left: 0
@@ -240,16 +242,73 @@ a
 .bespoke-backdrop.difference
   background-image: url('../images/difference.jpg')
 
-.bespoke-backdrop.machine-suffer
-  background-image: url('../images/machine-suffer.gif')
+.bespoke-backdrop.machine-decide
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/ci.gif')
 
-.bespoke-backdrop.love-all
-  background-image: url('../images/i-loved-it-all.jpg')
+.bespoke-backdrop.happy
+  background-image: url('../images/happy.gif')
 
 .bespoke-backdrop.green
   background-color: #00f3a5
   &.bespoke-backdrop-active
     opacity: 1
+
+section.content-left {
+
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 10%;
+  }
+
+}
+
+section.js-tools {
+
+  h2 {
+    font-size: 65px;
+    text-align: left;
+  }
+
+  ul {
+    font-size: 35px;
+    margin-top: 60px;
+    text-align: left;
+  }
+
+  li {
+    margin-top: 20px;
+    list-style: circle;
+
+  }
+
+  a {
+    border-bottom: 1px dotted;
+    border-color: rgba(0,0,0,.6);
+    padding: 0;
+    margin-left: 10px;
+  }
+
+  .row {
+    .left-column {
+      float: left;
+      width: 75%;
+    }
+    .right-column {
+      float: left;
+      width: 25%;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+}
 
 section.green
   color: rgba(0,0,0,.6)
@@ -289,8 +348,8 @@ section
   .me
     margin: 20px auto
     margin-top: 35px
-    width: 80px
-    height: 80px
+    width: 100px
+    height: 100px
     border-radius: 60px
     background-size: cover
     background-image: url('../images/me.png')
@@ -298,14 +357,15 @@ section
   .me-contacts
     margin: 20 auto
     a
-      color: $darker-font
+      color: #ddd;
       display: inline-block
       margin 0 20px
       text-decoration: none
-      font-size: 16px
+      font-size: 30px
+      font-weight: 100;
       border: none
     a:hover
-      color: lighten($darker-font, 20%)
+      color: #fff;
 
 .bullet-step
   .bespoke-bullet-active,
@@ -322,11 +382,23 @@ section.thanks
     padding-left: 100px
   text-align left
   h2
-    font-size: 70px
+    font-size: 90px
   a
     font-family $sans-serif
     font-weight 300
-    font-size: 18px
+    font-size: 28px
     margin-left: 10px
     display: block
-    line-height: 26px
+    line-height: 40px
+
+section.tool
+  h2
+    font-size: 80px
+  a
+    color: $turquoise;
+    font-size: 30px
+    &:hover {
+      color: white;
+    }
+  li
+    font-size: 40px;

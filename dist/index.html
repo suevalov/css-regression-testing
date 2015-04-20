@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta property="og:title" content="CSS Regression Testing. Alexander Suevalov.">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_GB">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CSS Regression Testing. Alexander Suevalov.</title>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body><!--[if lt IE 9]><p class="chromeframe">You are using an outdated browser.<a href="http://browsehappy.com/">Upgrade your browser today</a>or<a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>to better experience this site.</p><![endif]-->
+    <article>
+      <section data-bespoke-backdrop="intro">
+        <div class="content">
+          <div class="byline"></div>
+          <h2>CSS Regression Testing</h2>
+          <div class="byline"></div>
+          <div class="me"></div>
+          <div class="me-contacts"><a href="http://suevalov.com" target="__blank">http://suevalov.com</a><a href="mailto:suevalov.me@gmail.com">suevalov.me@gmail.com</a></div>
+        </div>
+      </section>
+      <section class="slide6">
+        <div class="content bullet-step">
+          <ul>
+            <li class="bullet"><img src="images/imagine1.jpg" style="margin-top: 20px;"></li>
+            <li class="bullet"><img src="images/imagine2.jpg" style="margin-top: 20px;"></li>
+            <li class="bullet"><img src="images/imagine3.jpg" style="margin-top: 20px;"></li>
+            <li class="bullet"><img src="images/imagine4.jpg" style="margin-top: 20px;"></li>
+          </ul>
+        </div>
+      </section>
+      <section data-bespoke-backdrop="screaming" class="slide7">
+        <div class="content">
+          <div class="byline"></div>
+          <h2>Manual testing? No way!</h2>
+          <div class="byline"></div>
+        </div>
+      </section>
+      <section data-bespoke-backdrop="slide4" class="slide4">
+        <div class="content">
+          <div class="byline"></div>
+          <h2>Stop&nbsp;&nbsp;-&nbsp;&nbsp;Wait&nbsp;&nbsp;-&nbsp;&nbsp;Automate</h2>
+          <div class="byline"></div>
+        </div>
+      </section>
+      <section data-bespoke-backdrop="green" class="content-left js-tools green">
+        <div class="content">
+          <h2>JS Quality Assurance</h2>
+          <div class="row">
+            <div class="left-column">
+              <ul>
+                <li>Static Syntax Analysis:<a href="http://jshint.com/" target="__blank">JSHint</a><span style="margin-left: 10px;">/</span><a href="http://eslint.org/" target="__blank">ESLint</a></li>
+                <li>Code Style Analysis:<a href="http://jscs.info/" target="__blank">JSCS</a></li>
+                <li>Unit Testing:<a href="http://jasmine.github.io/" target="__blank">Jasmine</a>,<a href="https://github.com/mochajs/mocha" target="__blank">Mocha</a> +<a href="https://github.com/chaijs/chai" target="__blank">Chai</a>,<a href="http://karma-runner.github.io/0.12/index.html" target="__blank">Karma</a></li>
+                <li>Selenium Testing</li>
+              </ul>
+            </div>
+            <div class="right-column"><img src="/images/js.png"></div>
+          </div>
+        </div>
+      </section>
+      <section data-bespoke-backdrop="green" class="content-left js-tools green">
+        <div class="content">
+          <h2>Markup & CSS Quality Assurance</h2>
+          <div class="row">
+            <div class="left-column">
+              <ul>
+                <li>Syntax and Code Style Analysis:<a href="https://github.com/CSSLint/csslint" target="__blank">CSSLint</a>,<a href="https://github.com/philipwalton/html-inspector" target="__blank">HTML Inspector</a></li>
+                <li>Regression Testing: ?</li>
+              </ul>
+            </div>
+            <div class="right-column"><img src="/images/css.gif"></div>
+          </div>
+        </div>
+      </section>
+      <section data-bespoke-backdrop="green" class="green slide5">
+        <div class="content">
+          <h2 style="font-size: 45px;">Easy to break, hard to track</h2><img src="images/bugs.png" style="margin-top: 20px;">
+        </div>
+      </section>
+      <section data-bespoke-backdrop="difference"></section>
+      <section data-bespoke-backdrop="machine-decide" class="slide8">
+        <div class="content">
+          <h2>Machines should decide!</h2>
+        </div>
+      </section>
+      <section data-bespoke-backdrop="green" class="green content-left js-tools slide9">
+        <div class="content">
+          <h2>What we want</h2>
+          <ul>
+            <li>Testing in different browsers</li>
+            <li>Testing in different viewports</li>
+            <li>Comparing page fragments</li>
+            <li>Manipulate with page before taking screenshot</li>
+          </ul>
+        </div>
+      </section>
+      <section class="slide10">
+        <div class="content"><img src="images/demo-time.jpg"></div>
+      </section>
+      <section class="slide12 tool">
+        <div class="content">
+          <h2>Huxley</h2><a href="https://github.com/facebookarchive/huxley" target="__blank">https://github.com/facebookarchive/huxley</a>
+          <ul style="text-align: center; margin-top: 20px;">
+            <li>No need to write tests</li>
+            <li>Testing in different states</li>
+            <li>Only full page screenshots</li>
+            <li>Only one browser</li>
+          </ul>
+        </div>
+      </section>
+      <section class="tool">
+        <div class="content">
+          <h2>Makeup</h2><a href="https://github.com/2gis/makeup" target="__blank">https://github.com/2gis/makeup</a>
+          <ul style="text-align: center; margip-top: 20px;">
+            <li>Tool for quick manual regression testing</li>
+          </ul>
+        </div>
+      </section>
+      <section class="slide13 tool">
+        <div class="content">
+          <h2>PhantomCSS</h2><a href="https://github.com/Huddle/PhantomCSS" target="__blank">https://github.com/Huddle/PhantomCSS</a>
+          <ul style="text-align: center; margin-top: 20px;">
+            <li>Fragments</li>
+            <li>Testing in different states</li>
+            <li>Only in PhantomJS</li>
+            <li>Manipulations with page using CasperJS</li>
+          </ul>
+        </div>
+      </section>
+      <section class="slide14 tool">
+        <div class="content">
+          <h2>PhantomFlow - Decision trees</h2><a href="https://github.com/Huddle/PhantomFlow" target="__blank">https://github.com/Huddle/PhantomFlow</a>
+          <ul style="text-align: center; margin-top: 20px;">
+            <li>Enables a more expressive way of describing user interaction paths within tests</li>
+            <li>Uses PhantomCSS</li>
+            <li>Only in PhantomJS</li>
+            <li>Supports TDD and BDD for web applications and responsive web sites</li>
+            <li>Supports visual regression workflows, quick inspection & rebasing via UI.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="tool">
+        <div class="content">
+          <h2>Wraith</h2><a href="https://github.com/BBC-News/wraith" target="__blank">https://github.com/BBC-News/wraith</a>
+          <ul style="text-align: center; margin-top: 20px;">
+            <li>Uses either PhantomJS, CasperJS or SlimerJS</li>
+          </ul>
+        </div>
+      </section>
+      <section class="slide15 tool">
+        <div class="content">
+          <h2>Backstop.js</h2><a href="https://github.com/garris/BackstopJS" target="__blank">https://github.com/garris/BackstopJS</a>
+          <ul style="text-align: center; margin-top: 20px;">
+            <li>Great for testing simple applications</li>
+            <li>Declarative description</li>
+            <li>Only in PhantomJS</li>
+          </ul>
+        </div>
+      </section>
+      <section class="slide16 tool">
+        <div class="content">
+          <h2>WebDriverCSS</h2><a href="https://github.com/webdriverio/webdrivercss" target="__blank">https://github.com/webdriverio/webdrivercss</a>
+          <ul style="text-align: center; margin-top: 20px;">
+            <li>Uses Selenium Grid</li>
+            <li>Testing for different browsers in different states</li>
+            <li>Intergration with SauceLabs, BrowserStack</li>
+            <li>Fragments, excludes</li>
+          </ul>
+        </div>
+      </section>
+      <section class="slide17 tool">
+        <div class="content">
+          <h2>Gemini</h2><a href="https://github.com/bem/gemini" target="__blank">https://github.com/bem/gemini</a>
+          <ul style="text-align: center; margin-top: 20px;">
+            <li>Compatibility with different browsers</li>
+            <li>Intergration with SauceLabs, BrowserStack</li>
+            <li>Fragments</li>
+            <li>CSS test coverage statistics</li>
+          </ul>
+        </div>
+      </section>
+      <section data-bespoke-backdrop="happy">
+        <div class="content">
+          <div class="byline"></div>
+          <h2>Automated</h2>
+          <div class="byline"></div>
+        </div>
+      </section>
+      <section data-bespoke-backdrop="green" class="content-left js-tools green">
+        <div class="content">
+          <h2>Advice</h2>
+          <ul>
+            <li>Use static data</li>
+            <li>CSS Regression Testing is not a replacement of functional JS testing</li>
+          </ul>
+        </div>
+      </section>
+      <section data-bespoke-backdrop="ironman" class="thanks">
+        <div class="content">
+          <h2>Thanks</h2><a href="http://suevalov.com/" target="__blank">Alexander Suevalov</a><a href="mailto:suevalov.me@gmail.com">suevalov.me@gmail.com</a><a href="https://github.com/suevalov" target="__blank" class="github">http://github.com/suevalov</a><a href="https://twitter.com/Suevalov" target="__blank" class="twitter">http://twitter.com/Suevalov</a>
+        </div>
+      </section>
+    </article>
+    <script src="build/build.js"></script>
+    <script>
+      (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+        try {
+          w.yaCounter27193172 = new Ya.Metrika({
+            id:27193172,
+      trackHash:true
+      });
+      } catch(e) { }
+      });
+      var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div><img src="//mc.yandex.ru/watch/27193172" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
+  </body>
+</html>

@@ -21,36 +21,7 @@ html(prefix="og: http://ogp.me/ns#")
           .me
           .me-contacts
             a(href="http://suevalov.com" target="__blank") http://suevalov.com
-            a(href="mailto:asuevalov@dataart.com") asuevalov@dataart.com
-
-      section.green.slide2(data-bespoke-backdrop="green")
-        .content
-          h2 Code Quality Assurance
-          ul(style="text-align: center; font-size: 30px; margin-top: 50px;")
-            li JS Code Style: jscs
-            li JS Static Syntax Analysis: jshint
-            li JS Regressions: functional testing
-            li CSS Regressions: ?
-
-      section.slide3(data-bespoke-backdrop="slide3")
-        .content
-          .byline
-          h2 What is Regression Testing?
-          .byline
-          img(src="images/regression.png" style="margin-top: 20px;")
-
-      section.slide4(data-bespoke-backdrop="slide4")
-        .content
-          .byline
-          h2 Why do we need to automate?
-          .byline
-
-      section(data-bespoke-backdrop="difference")
-
-      section.green.slide5(data-bespoke-backdrop="green")
-        .content
-          h2(style="font-size: 45px;") Easy to break, hard to track
-          img(src="images/bugs.png" style="margin-top: 20px;")
+            a(href="mailto:suevalov.me@gmail.com") suevalov.me@gmail.com
 
       section.slide6
         .content.bullet-step
@@ -66,17 +37,69 @@ html(prefix="og: http://ogp.me/ns#")
 
       section.slide7(data-bespoke-backdrop="screaming")
         .content
+          .byline
           h2 Manual testing? No way!
+          .byline
 
-      section.slide8(data-bespoke-backdrop="machine-suffer")
+      section.slide4(data-bespoke-backdrop="slide4")
         .content
-          h2 Machines should suffer!
+          .byline
+          h2 Stop&nbsp;&nbsp;-&nbsp;&nbsp;Wait&nbsp;&nbsp;-&nbsp;&nbsp;Automate
+          .byline
 
-      section.green.slide9(data-bespoke-backdrop="green")
+      section.content-left.js-tools.green(data-bespoke-backdrop="green")
         .content
+          h2 JS Quality Assurance
+          .row
+            .left-column
+              ul
+                li Static Syntax Analysis:
+                  a(href="http://jshint.com/" target="__blank") JSHint
+                  span(style="margin-left: 10px;") /
+                  a(href="http://eslint.org/" target="__blank") ESLint
+                li Code Style Analysis:
+                  a(href="http://jscs.info/" target="__blank") JSCS
+                li Unit Testing:
+                  a(href="http://jasmine.github.io/" target="__blank") Jasmine
+                  | ,
+                  a(href="https://github.com/mochajs/mocha" target="__blank") Mocha
+                  |  +
+                  a(href="https://github.com/chaijs/chai" target="__blank") Chai
+                  | ,
+                  a(href="http://karma-runner.github.io/0.12/index.html" target="__blank") Karma
+                li Selenium Testing
+            .right-column
+              img(src="/images/js.png")
 
+      section.content-left.js-tools.green(data-bespoke-backdrop="green")
+        .content
+          h2 Markup & CSS Quality Assurance
+          .row
+            .left-column
+              ul
+                li Syntax and Code Style Analysis:
+                  a(href="https://github.com/CSSLint/csslint" target="__blank") CSSLint
+                  | ,
+                  a(href="https://github.com/philipwalton/html-inspector" target="__blank") HTML Inspector
+                li Regression Testing: ?
+            .right-column
+              img(src="/images/css.gif")
+
+      section.green.slide5(data-bespoke-backdrop="green")
+        .content
+          h2(style="font-size: 45px;") Easy to break, hard to track
+          img(src="images/bugs.png" style="margin-top: 20px;")
+
+      section(data-bespoke-backdrop="difference")
+
+      section.slide8(data-bespoke-backdrop="machine-decide")
+        .content
+          h2 Machines should decide!
+
+      section.green.content-left.js-tools.slide9(data-bespoke-backdrop="green")
+        .content
           h2 What we want
-          ul(style="text-align: center; margin-bottom: 20px; font-size: 32px;")
+          ul
             li Testing in different browsers
             li Testing in different viewports
             li Comparing page fragments
@@ -86,81 +109,90 @@ html(prefix="og: http://ogp.me/ns#")
         .content
           img(src="images/demo-time.jpg")
 
-      section.slide11.tool
-        .content
-          h2 DPXDT
-          a(href="https://github.com/bslatkin/dpxdt" target="__blank") https://github.com/bslatkin/dpxdt
-          ul(style="text-align: center; margin-top: 20px;")
-            li.bullet No need to write tests
-            li.bullet Need to provide reference URL
-            li.bullet Only full page screenshots
-
       section.slide12.tool
         .content
           h2 Huxley
           a(href="https://github.com/facebookarchive/huxley" target="__blank") https://github.com/facebookarchive/huxley
           ul(style="text-align: center; margin-top: 20px;")
-            li.bullet No need to write tests
-            li.bullet Testing in different states
-            li.bullet Only full page screenshots
-            li.bullet Only one browser
+            li No need to write tests
+            li Testing in different states
+            li Only full page screenshots
+            li Only one browser
+
+      section.tool
+        .content
+          h2 Makeup
+          a(href="https://github.com/2gis/makeup" target="__blank") https://github.com/2gis/makeup
+          ul(style="text-align: center; margip-top: 20px;")
+            li Tool for quick manual regression testing
 
       section.slide13.tool
         .content
           h2 PhantomCSS
           a(href="https://github.com/Huddle/PhantomCSS" target="__blank") https://github.com/Huddle/PhantomCSS
           ul(style="text-align: center; margin-top: 20px;")
-            li.bullet Fragments
-            li.bullet Testing in different states
-            li.bullet Only in PhantomJS
-            li.bullet Manipulations with page using CasperJS
+            li Fragments
+            li Testing in different states
+            li Only in PhantomJS
+            li Manipulations with page using CasperJS
 
       section.slide14.tool
         .content
           h2 PhantomFlow - Decision trees
           a(href="https://github.com/Huddle/PhantomFlow" target="__blank") https://github.com/Huddle/PhantomFlow
           ul(style="text-align: center; margin-top: 20px;")
-            li.bullet Enables a more expressive way of describing user interaction paths within tests
-            li.bullet Uses PhantomCSS
-            li.bullet Only in PhantomJS
-            li.bullet Supports TDD and BDD for web applications and responsive web sites
-            li.bullet Supports misual regression workflows, quick inspection & rebasing via UI.
+            li Enables a more expressive way of describing user interaction paths within tests
+            li Uses PhantomCSS
+            li Only in PhantomJS
+            li Supports TDD and BDD for web applications and responsive web sites
+            li Supports visual regression workflows, quick inspection & rebasing via UI.
+
+      section.tool
+        .content
+          h2 Wraith
+          a(href="https://github.com/BBC-News/wraith" target="__blank") https://github.com/BBC-News/wraith
+          ul(style="text-align: center; margin-top: 20px;")
+            li Uses either PhantomJS, CasperJS or SlimerJS
 
       section.slide15.tool
         .content
           h2 Backstop.js
           a(href="https://github.com/garris/BackstopJS" target="__blank") https://github.com/garris/BackstopJS
           ul(style="text-align: center; margin-top: 20px;")
-            li.bullet Great for testing simple application
-            li.bullet Declarative description
-            li.bullet Only in PhantomJS
+            li Great for testing simple applications
+            li Declarative description
+            li Only in PhantomJS
 
       section.slide16.tool
         .content
           h2 WebDriverCSS
           a(href="https://github.com/webdriverio/webdrivercss" target="__blank") https://github.com/webdriverio/webdrivercss
           ul(style="text-align: center; margin-top: 20px;")
-            li.bullet Uses Selenium Grid
-            li.bullet Testing for different browsers in different states
-            li.bullet Intergration with SauceLabs, BrowserStack
-            li.bullet Fragments, excludes
+            li Uses Selenium Grid
+            li Testing for different browsers in different states
+            li Intergration with SauceLabs, BrowserStack
+            li Fragments, excludes
 
       section.slide17.tool
         .content
           h2 Gemini
           a(href="https://github.com/bem/gemini" target="__blank") https://github.com/bem/gemini
           ul(style="text-align: center; margin-top: 20px;")
-            li.bullet Compatibility with different browsers
-            li.bullet Intergration with SauceLabs, BrowserStack
-            li.bullet Fragments
-            li.bullet CSS test coverage statistics
+            li Compatibility with different browsers
+            li Intergration with SauceLabs, BrowserStack
+            li Fragments
+            li CSS test coverage statistics
 
-      section(data-bespoke-backdrop="love-all")
-
-      section.green(data-bespoke-backdrop="green")
+      section(data-bespoke-backdrop="happy")
         .content
-          h2 Some Advices
-          ul(style="margin-top: 20px; font-size: 32px; text-align: center;")
+          .byline
+          h2 Automated
+          .byline
+
+      section.content-left.js-tools.green(data-bespoke-backdrop="green")
+        .content
+          h2 Advice
+          ul
             li Use static data
             li CSS Regression Testing is not a replacement of functional JS testing
                 
@@ -168,7 +200,7 @@ html(prefix="og: http://ogp.me/ns#")
         .content
           h2 Thanks
           a(href="http://suevalov.com/" target="__blank") Alexander Suevalov
-          a(href="mailto:asuevalov@dataart.com") asuevalov@dataart.com
+          a(href="mailto:suevalov.me@gmail.com") suevalov.me@gmail.com
           a.github(href="https://github.com/suevalov" target="__blank") http://github.com/suevalov
           a.twitter(href="https://twitter.com/Suevalov" target="__blank") http://twitter.com/Suevalov
           
