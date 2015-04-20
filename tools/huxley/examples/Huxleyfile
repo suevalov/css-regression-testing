@@ -1,0 +1,5 @@
+[profile]
+url=http://localhost:3000/profile.html
+
+[projects]
+url=http://localhost:3000/projects.html
