@@ -1935,16 +1935,6 @@ table.dataTable thead .sorting:after {
     display: none;
 }
 
-.pace .pace-progress {
-    background: #1ab394;
-    position: fixed;
-    z-index: 2000;
-    top: 0;
-    right: 100%;
-    width: 100%;
-    height: 2px;
-}
-
 .pace-inactive {
     display: none;
 }
@@ -7719,4 +7709,8 @@ body.skin-3 {
     .welcome-message {
         display: none;
     }
+}
+
+.js-new-data-for-the-report a.dropdown-toggle {
+    color: red;
 }
