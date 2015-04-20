@@ -19,15 +19,15 @@
   "scenarios": [
     {
       "url": "http://localhost:3000/",
-      "hideSelectors": [
-      ],
-      "removeSelectors": [
-      ],
+      "hideSelectors": [],
+      "removeSelectors": [],
       "selectors": [
-        ".nav-header"
+        ".js-new-data-for-the-report",
+        ".js-read-comments-and-tweets",
+        ".js-your-daily-feed"
       ],
       "readyEvent": null,
-      "delay": 500
+      "delay": 1000
     }
   ]
 }
