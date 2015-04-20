@@ -18,17 +18,13 @@
   ],
   "scenarios": [
     {
-      "label": "startbootstrap",
-      "url": "http://localhost:8000/",
+      "url": "http://localhost:3000/",
       "hideSelectors": [
       ],
       "removeSelectors": [
       ],
       "selectors": [
-        "nav.navbar",
-        ".js-index-widgets-dashboard",
-        ".js-index-area-chart-example",
-        ".js-index-chat-panel"
+        ".nav-header"
       ],
       "readyEvent": null,
       "delay": 500

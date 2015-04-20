@@ -25,6 +25,6 @@
       casper.test.pass('Responsive page has loaded');
       phantomCSS.screenshot('body');
     });
-  };
+  }
 
 }());

@@ -1,6 +1,0 @@
-<testsuite name="[/Users/suevalov/Development/projects/dataart/js-community/css-regression-tools/tools/phantom-flow/test-results/visuals/flows/coffeemachine.test.js.phantomcss] Get a coffee" tests="2" failures="1">
-  <testcase classname="Go to the kitchen" name="PhantomCSS /Users/suevalov/Development/projects/dataart/js-community/css-regression-tools/tools/phantom-flow/test-results/visuals/flows/coffeemachine.test.js/Get a coffee/Go to the kitchen.png"></testcase>
-  <testcase classname="Go to the coffee machine" name="PhantomCSS /Users/suevalov/Development/projects/dataart/js-community/css-regression-tools/tools/phantom-flow/test-results/visuals/flows/coffeemachine.test.js/Get a coffee/Go to the coffee machine.png">
-    <failure type="fail">explicit call to fail()</failure>
-  </testcase>
-</testsuite>
